@@ -1,0 +1,109 @@
+body {
+    font-family: verdana, geneva, sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #555;
+}
+
+div.highlight {
+    background-color: #333;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*
+ *  HEADING
+ */
+
+div.header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.header p.subheading {
+    font-variant: small-caps;
+    margin-bottom: 0px;
+}
+
+div.header p.heading {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+/*
+ *  POST
+ */
+
+div.post {
+    text-align: justify;
+}
+
+div.post tt {
+    color: olive;
+}
+
+div.post a {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+div.post a:link {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+div.post a:visited {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+div.post a:hover {
+    color: darkcyan;
+    text-decoration: underline;
+}
+
+div.post a:active {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+/*
+ *  POST TITLE
+ */
+
+div.post p.title {
+    color: #888;
+    font-variant: small-caps;
+    font-size: 35px;
+}
+
+div.post p.title a:link {
+    color: #888;
+    text-decoration: none;
+}
+
+div.post p.title a:visited {
+    color: #888;
+    text-decoration: none;
+}
+
+div.post p.title a:hover {
+    color: #888;
+    text-decoration: underline;
+}
+
+div.post p.title a:active {
+    color: #888;
+    text-decoration: none;
+}
+
+/*
+ *  POST DATE
+ */
+
+div.postdate {
+    font-size: 12px;
+    text-align: center;
+}
