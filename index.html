@@ -17,6 +17,10 @@ title: Blog
                 <div class="clear"></div>
                 <div class="grid_8 push_2">
                     {{ post.content }}
+                    {% if post.link %}
+                        <img src="http://www.{{ post.host }}/favicon.ico" />
+                        {{ post.host | upcase }}
+                    {% endif %}
                 </div>
                 <div class="clear"></div>
             </div>
