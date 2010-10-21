@@ -19,7 +19,12 @@ div.highlight {
 div.header {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+div.header p.heading {
+    margin-bottom: 0px;
+    font-size: 40px;
 }
 
 div.header p.subheading {
@@ -27,10 +32,27 @@ div.header p.subheading {
     margin-bottom: 0px;
 }
 
-div.header p.heading {
-    margin-top: 0px;
-    font-size: 30px;
+div.header p.subheading a:link {
+    text-decoration: none;
+    color: #555;
 }
+
+div.header p.subheading a:visited {
+    text-decoration: none;
+    color: #555;
+}
+
+div.header p.subheading a:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #555;
+}
+
+div.header p.subheading a:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
 
 /*
  *  POST
@@ -38,6 +60,24 @@ div.header p.heading {
 
 div.post {
     text-align: justify;
+}
+
+div.post h1 {
+    font-variant: small-caps;
+    color: #888;
+    font-size: 30px;
+}
+
+div.post h2 {
+    font-variant: small-caps;
+    color: #888;
+    font-size: 25px;
+}
+
+div.post h3 {
+    font-variant: small-caps;
+    color: #888;
+    font-size: 20px;
 }
 
 div.post tt {
@@ -77,6 +117,7 @@ div.post p.title {
     color: #888;
     font-variant: small-caps;
     font-size: 35px;
+    text-align: left;
 }
 
 div.post p.title a:link {
