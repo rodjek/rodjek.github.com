@@ -67,4 +67,4 @@
 .vg { color: #00cdcd } /* Name.Variable.Global */
 .vi { color: #00cdcd } /* Name.Variable.Instance */
 .il { color: #cd00cd } /* Literal.Number.Integer.Long */
-.text { color: #ffffff } /* plain text */
+div.highlight code.text { color: #ffffff } /* plain text */

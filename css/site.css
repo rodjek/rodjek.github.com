@@ -80,6 +80,10 @@ div.post h3 {
     font-size: 20px;
 }
 
+div.post code {
+    color: olive;
+}
+
 div.post tt {
     color: olive;
 }
