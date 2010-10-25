@@ -12,6 +12,11 @@ div.highlight {
     padding-right: 5px;
 }
 
+sup {
+    font-size: 12px;
+    vertical-align: super;
+}
+
 /*
  *  HEADING
  */
