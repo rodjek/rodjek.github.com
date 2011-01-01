@@ -37,4 +37,6 @@ Augeas {
 
 {% endhighlight %}
 
-That's it!
+Note: Puppet will display an error for each lens during runs as it'll try to
+load them as Ruby files.  It's noisy, but it's not a fatal error.  I'm hoping
+to find an easy way to prevent this.
