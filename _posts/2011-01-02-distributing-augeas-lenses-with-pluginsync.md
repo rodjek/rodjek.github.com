@@ -30,11 +30,10 @@ Augeas where to find these lenses.
 The easiest way to go about this is to set a default `load_path` value for
 Augeas type.  To do that, add the following to your `site.pp`.
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 Augeas {
   load_path => "/usr/share/augeas/lenses:${settings::vardir}/augeas/lenses",
 }
-
 {% endhighlight %}
 
 Note: Puppet will display an error for each lens during runs as it'll try to
