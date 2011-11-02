@@ -12,10 +12,7 @@ code {
 }
 
 div.highlight {
-    background-color: #002b36;
-    font-size: 12px;
     padding: 10px;
-    margin-bottom: 20px;
 }
 
 div.highlight pre {
@@ -25,6 +22,29 @@ div.highlight pre {
 sup {
     font-size: 12px;
     vertical-align: super;
+}
+
+table.highlighttable {
+    width: 100%;
+    background-color: #002b36;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: anonymous-pro, courier;
+}
+
+div.linenodiv pre {
+    line-height: 125%;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #073642;
+    text-align: right;
+    color: #586e75;
+}
+
+div.linenodiv pre code {
+    text-align: right;
+    color: #586e75;
 }
 
 /*
