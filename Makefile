@@ -1,6 +1,7 @@
 all:
 	rm -rf /tmp/sitebuild
 	jekyll --no-auto --no-server --no-safe /tmp/sitebuild
+	rm -rf _site
 	git checkout master
 	rm -rf *
 	cp -rf /tmp/sitebuild/* .
