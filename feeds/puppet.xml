@@ -19,7 +19,7 @@ layout: nil
         <link href="http://bombasticmonkey.com{{ post.url }}/"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://bombasticmonkey.com{{ post.url }}/</id>
-        <content type="html">{{ post.content }}</content>
+        <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
 </feed>
