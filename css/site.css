@@ -33,6 +33,10 @@ table.highlighttable {
     font-family: anonymous-pro, courier;
 }
 
+td.linenos {
+    width: 1%;
+}
+
 div.linenodiv pre {
     line-height: 125%;
     margin-bottom: 0px;
@@ -40,6 +44,8 @@ div.linenodiv pre {
     background-color: #073642;
     text-align: right;
     color: #586e75;
+    clear: both;
+    overflow: hidden;
 }
 
 div.linenodiv pre code {
