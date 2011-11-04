@@ -4,7 +4,7 @@
     <link type="application/atom+xml" href="http://bombasticmonkey.com/{{ page.url }}" rel="self"/>
     <link type="text/html" href="http://bombasticmonkey.com" rel="alternate"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>http://bombasticmonkey.com</id>
+    <id>http://bombasticmonkey.com/</id>
     <author>
         <name>Tim Sharpe</name>
     </author>
