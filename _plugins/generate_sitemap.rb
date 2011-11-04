@@ -81,7 +81,7 @@ module Jekyll
       
       # First, try to find any stand-alone pages.      
       site.pages.each{ |page|
-        next if page =~ /\.xml$/
+        next if page.name.end_with? '.xml'
 
         path     = page.subfolder + '/' + page.name
         mod_date = File.mtime(site.source + path)
