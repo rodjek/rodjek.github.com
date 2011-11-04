@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Test Your Puppet Modules - Functions
+categories:
+- puppet
+- rspec
+- testing
 ---
 
 {% highlight irc linenos %}

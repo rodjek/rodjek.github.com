@@ -1,6 +1,9 @@
 ---
 title: Distributing Augeas lenses with Puppet's pluginsync
 layout: post
+categories:
+- puppet
+- augeas
 ---
 
 Sick of having to write `file` resources to distribute the Augeas lenses that
