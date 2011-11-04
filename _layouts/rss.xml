@@ -9,7 +9,7 @@
         <name>Tim Sharpe</name>
     </author>
     <rights>Copyright (c) 2010-2011 Tim Sharpe</rights>
-    {% for post in site.posts limit:20 %}
+    {% for post in site.categories[page.category] limit:20 %}
     <entry>
         <title>{{ post.title }}</title>
         <link href="http://bombasticmonkey.com{{ post.url }}/"/>
@@ -17,7 +17,7 @@
         <id>http://bombasticmonkey.com{{ post.url }}/</id>
         <description>
             <![CDATA[
-                {{ post.content }}
+                {{ post.content | xml_escape}}
             ]]>
         </description>
     </entry>
