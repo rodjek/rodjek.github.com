@@ -11,11 +11,15 @@
     <rights>Copyright (c) 2010-2011 Tim Sharpe</rights>
     {% for post in site.posts limit:20 %}
     <entry>
-        <title></title>
+        <title>{{ post.title }}</title>
         <link href="http://bombasticmonkey.com{{ post.url }}/"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://bombasticmonkey.com{{ post.url }}/</id>
-        <summary type="html">{{ post.content | xml_escape }}</summary>
+        <description>
+            <![CDATA[
+                {{ post.content | xml_escape }}
+            ]]>
+        </description>
     </entry>
     {% endfor %}
 </feed>
