@@ -10,7 +10,7 @@ layout: nil
     <id>http://bombasticmonkey.com/</id>
     <author>
         <name>Tim Sharpe</name>
-        <email>tim@sharpe.id.au</name>
+        <email>tim@sharpe.id.au</email>
     </author>
     <rights>Copyright (c) 2010-2011 Tim Sharpe</rights>
     {% for post in site.posts limit:20 %}
