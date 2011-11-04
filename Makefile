@@ -8,3 +8,4 @@ all:
 	git add .
 	git commit -a -m "update site"
 	git checkout source
+	git push --all
