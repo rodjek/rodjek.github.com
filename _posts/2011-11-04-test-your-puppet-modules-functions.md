@@ -75,7 +75,7 @@ vendor/gems/
 .bundle/
 {% endhighlight %}
 
-Now run we just need to tell bundler to install everything and commit our
+Now we just need to tell bundler to install everything and commit our
 changes to the repository.
 
 {% highlight console linenos %}
@@ -188,7 +188,7 @@ important things:
 Now for the all important running of the tests.
 
 {% highlight console linenos %}
-$ rake
+$ bundle exec rake
 /usr/bin/ruby -S rspec modules/misc/spec/functions/bool2num_spec.rb
 ..............
 
