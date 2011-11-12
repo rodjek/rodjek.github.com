@@ -3,10 +3,9 @@ title: Auto-notify Resources From Your Puppet Types
 layout: post
 categories:
  - puppet
-published: false
 ---
 
-So, I ran into a bit of a conundrum yesterday.  I was working on a Puppet
+So, I ran into a bit of a problem yesterday.  I was working on a Puppet
 module for the [Sensu](https://github.com/sonian/sensu/) monitoring framework,
 part of which involved writing a custom Puppet type to manage the configuration
 of service checks.  Normally this is a trivial matter, however in this case,
@@ -71,8 +70,8 @@ Puppet::Type.newtype(:mytype) do
 end
 {% endhighlight %}
 
-Now, all I needed to do was to make it filter out any resources that don't
-exist in the node's catalogue
+Now, all I needed to do was make it so that it only notified the resources that
+actually existed in the node's manifest
 
 {% highlight ruby linenos %}
 Puppet::Type.newtype(:mytype) do
