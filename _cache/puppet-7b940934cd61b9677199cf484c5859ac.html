@@ -1,0 +1,13 @@
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span class="kn">sensu_check</span> <span class="gr">{</span> <span class="s">&#39;mycheck&#39;</span><span class="gr">:</span>
+  <span class="nc">notify</span> <span class="nn">=&gt;</span> <span class="gr">[</span>
+    <span class="kn">Service</span><span class="gr">[</span><span class="s">&#39;sensu-client&#39;</span><span class="gr">],</span>
+    <span class="kn">Service</span><span class="gr">[</span><span class="s">&#39;sensu-server&#39;</span><span class="gr">],</span>
+  <span class="gr">],</span>
+<span class="gr">}</span>
+</pre></div>
+</td></tr></table>

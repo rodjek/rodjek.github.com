@@ -150,7 +150,7 @@ module Jekyll
       
       "
   <url>
-      <loc>#{baseurl}#{path}</loc>
+      <loc>http://bombasticmonkey.com#{path}</loc>
       <lastmod>#{date.strftime("%Y-%m-%d")}</lastmod>#{if changefreq.length > 0
           "\n      <changefreq>#{changefreq}</changefreq>" end}
   </url>"
