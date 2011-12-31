@@ -1,0 +1,39 @@
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span class="gr">node</span> <span class="s">&#39;foo.example.com&#39;</span> <span class="gr">{</span>
+  <span class="nv">$ntp_running</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="nv">$monitor</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="nv">$backup</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="nv">$fml</span> <span class="o">=</span> <span class="kc">true</span>
+
+  <span class="o">in</span><span class="s">clude</span> <span class="s">ntp</span><span class="gr"></span>
+<span class="gr">}</span>
+
+<span class="gr">class</span> <span class="kn">ntp</span> <span class="gr">{</span><span class="c-Singleline"></span>
+<span class="c-Singleline">  # trimmed for brevity</span>
+
+  <span class="kn">service</span> <span class="gr">{</span> <span class="nv">$servicename</span><span class="gr">:</span>
+    <span class="nc">ensure</span> <span class="nn">=&gt;</span> <span class="nv">$ntp_running</span> <span class="o">?</span> <span class="gr">{</span>
+      <span class="nc">true</span>  <span class="nn">=&gt;</span> <span class="s">&#39;running&#39;</span><span class="gr">,</span>
+      <span class="nc">false</span> <span class="nn">=&gt;</span> <span class="s">&#39;stopped&#39;</span><span class="gr">,</span>
+    <span class="gr">},</span>
+  <span class="gr">}</span>
+<span class="gr">}</span>
+</pre></div>
+</td></tr></table>
