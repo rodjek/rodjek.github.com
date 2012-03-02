@@ -140,5 +140,5 @@ And wait for them to run!
 
 ## TL;DR
 
-Go check out my [logrotate module](https://github/rodjek/puppet-logrotate) for
+Go check out my [logrotate module](https://github.com/rodjek/puppet-logrotate) for
 a working example.
