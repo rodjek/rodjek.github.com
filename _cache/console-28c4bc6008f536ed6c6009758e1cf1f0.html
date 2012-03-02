@@ -1,0 +1,11 @@
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span class="gp">$</span> mkdir -p spec/classes spec/defines spec/fixtures/manifests
+<span class="gp">$</span> mkdir -p spec/fixtures/modules/
+<span class="gp">$</span> <span class="nb">cd </span>spec/fixtures/modules/
+<span class="gp">$</span> touch spec/fixtures/manifests/init.pp
+<span class="gp">$</span> <span class="k">for </span>i in files lib manifests templates; <span class="k">do </span>ln -s ../../../../<span class="nv">$i</span> <span class="nv">$i</span>; <span class="k">done</span>
+</pre></div>
+</td></tr></table>
