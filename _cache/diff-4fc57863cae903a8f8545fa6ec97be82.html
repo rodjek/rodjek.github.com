@@ -1,0 +1,29 @@
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="highlight"><pre><span class="gh">diff --git a/test.pp b/test.pp</span>
+<span class="gh">index 7cd1e93..4d455cf 100644</span>
+<span class="gd">--- a/test.pp</span>
+<span class="gi">+++ b/test.pp</span>
+<span class="gu">@@ -1,6 +1,6 @@</span>
+<span class="gd">-$foo = &quot;/tmp/foo&quot;</span>
+<span class="gi">+$foo = &#39;/tmp/foo&#39;</span>
+
+<span class="gd">-file { &quot;$foo&quot;:</span>
+<span class="gi">+file { $foo:</span>
+   ensure =&gt; present,
+<span class="gd">-  mode =&gt; 444,</span>
+<span class="gi">+  mode   =&gt; &#39;0444&#39;,</span>
+ }
+</pre></div>
+</td></tr></table>
