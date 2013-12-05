@@ -85,7 +85,7 @@ there are cases where you might not want to test this (if, for example, you are
 testing a module that notifies a resource in a different module).
 
 ### relationship tests
-Some new additions to the `create_<resource>` matcher are the resource
+Some new additions to the `contain_<resource>` matcher are the resource
 relationship tests.
 
 {% highlight ruby linenos %}
@@ -117,7 +117,7 @@ it { should contain_notify('foo').that_requires('Notify[bar]') }
 {% endhighlight %}
 
 ### only_with tests
-Also new to the `create_<resource>` matcher are the `only_with` tests.  Unlike
+Also new to the `contain_<resource>` matcher are the `only_with` tests.  Unlike
 the `with` tests which only test that the specified parameters have been
 defined, `only_with` tests that these are the *only* parameters passed to
 a resource.
