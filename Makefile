@@ -1,6 +1,6 @@
 all:
 	rm -rf /tmp/sitebuild
-	jekyll --no-auto --no-server --no-safe /tmp/sitebuild
+	bundle exec jekyll --no-server /tmp/sitebuild
 	rm -rf _site
 	git checkout master
 	rm -rf *
