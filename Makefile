@@ -1,6 +1,6 @@
 all:
 	rm -rf /tmp/sitebuild
-	bundle exec jekyll --no-server /tmp/sitebuild
+	bundle exec jekyll build --destination /tmp/sitebuild
 	rm -rf _site
 	git checkout master
 	rm -rf *
