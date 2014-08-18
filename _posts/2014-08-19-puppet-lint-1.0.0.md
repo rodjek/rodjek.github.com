@@ -52,14 +52,14 @@ add and distribute custom checks outside of the main code base.
 
 My hope is that together as a community we can come up with some new checks and
 influence new versions of the style guide.  I've written
-a [tutorial](https://puppet-lint.com/developer/tutorial/) that steps through
+a [tutorial](http://puppet-lint.com/developer/tutorial/) that steps through
 how to write a basic check.  If you've got a good idea for a check but aren't
 up to writing it yourself, create an issue in the puppet-lint repo with the
 ["new check" label](https://github.com/rodjek/puppet-lint/labels/new%20check)
 and maybe someone else will be able to.
 
 You can find the currently tiny list of [community
-plugins here](https://puppet-lint.com/plugins/).  They're distributed as Ruby
+plugins here](http://puppet-lint.com/plugins/).  They're distributed as Ruby
 Gems so you can easily install them however you're currently managing
 puppet-lint (`gem`, `bundler`, etc).
 
@@ -67,7 +67,7 @@ puppet-lint (`gem`, `bundler`, etc).
 
 A much requested feature, you can now disable tests via special comments in
 your code.  Read more about it
-[here](https://puppet-lint.com/controlcomments/).
+[here](http://puppet-lint.com/controlcomments/).
 
 ## New checks
 
@@ -83,4 +83,4 @@ The `class_parameter_defaults` check has been removed. This check was based on
 a misreading of the style guide.
 
 For a more complete list of changes, I'd recommend reading [the
-changelog.](https://puppet-lint.com/changelog/)
+changelog.](http://puppet-lint.com/changelog/)
