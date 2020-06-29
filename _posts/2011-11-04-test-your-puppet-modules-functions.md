@@ -30,7 +30,7 @@ hundreds of machines or worse (purge the mysql-server package and all it's data
  * Catch any problems moving between Puppet releases before it hits production.
  * Now we can do this too
 
-![Obligatory XKCD](http://imgs.xkcd.com/comics/compiling.png)
+![Obligatory XKCD](https://imgs.xkcd.com/comics/compiling.png)
 
 ## Getting started
 
@@ -43,7 +43,7 @@ assumptions now:
  * You don't mind getting your hands dirty with a bit of simple Ruby.
  * You have Ruby installed (1.8.7).
 
-First of all, we're going to install [Bundler](http://gembundler.com) to manage
+First of all, we're going to install [Bundler](https://bundler.io) to manage
 the dependencies our Puppet testing rig will have.
 
 {% highlight console linenos %}
@@ -80,7 +80,7 @@ changes to the repository.
 
 {% highlight console linenos %}
 $ bundle install --path vendor/gems
-Fetching source index for http://rubygems.org/
+Fetching source index for https://rubygems.org/
 Installing rake (0.8.7)
 Installing diff-lcs (1.1.3)
 Installing facter (1.6.0)
@@ -112,7 +112,7 @@ RSpec.configure do |c|
 end
 {% endhighlight %}
 
-The last thing we need to do is create a [Rake](http://rake.rubyforge.org) task
+The last thing we need to do is create a [Rake](https://ruby.github.io/rake) task
 to run our tests.  Create a `Rakefile` in the root of your Puppet repository
 with the following.
 
