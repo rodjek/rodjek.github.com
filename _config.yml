@@ -1,5 +1,3 @@
 #baseurl: http://bombasticmonkey.com
 permalink: /:year/:month/:day/:title
 exclude: ['vendor']
-highlighter: pygments
-markdown: redcarpet
