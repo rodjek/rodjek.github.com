@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ page.title | truncate: 60 }}</title>
+        <link rel="stylesheet" href="/css/site.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tim Sharpe">
+        <meta charset="UTF-8">
+    </head>
+    <body class="font-sans">
+        <div class="min-h-screen flex flex-col md:flex-row w-full">
+            <div class="md:order-last bg-purple-800 md:w-1/4 flex-0 lg:w-96 p-4">
+                <div class="flex flex-col h-full justify-end text-center md:text-left">
+                    <h1 class="text-3xl text-purple-100 font-bold">Tim Sharpe</h1>
+                    <div class="flex flex-col text-2xl text-purple-100 md:mt-8">
+                        <a href="/" class="hover:underline">Home</a>
+                        <a href="/projects/" class="hover:underline">Projects</a>
+                        <a href="/about/" class="hover:underline">About Me</a>
+                    </div>
+                    <div class="hidden md:block md:mt-8 text-purple-300 text-sm">
+                        <p>Copyright {{ site.time | date: "%Y" }} Tim Sharpe</p>
+                        <p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:overflow-y-auto scrolling-touch md:h-screen lg:w-240 md:px-4 md:mx-auto text-gray-800 text-lg tracking-wide">
+                {{ content }}
+            </div>
+            <div class="md:hidden md:mt-8">
+                <hr>
+                <p>Copyright {{ site.time | date: "%Y" }} Tim Sharpe</p>
+                <p>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+            </div>
+        </div>
+    </body>
+</html>

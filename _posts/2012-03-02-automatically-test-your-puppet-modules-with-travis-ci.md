@@ -77,7 +77,7 @@ You can now run `rake lint` to run puppet-lint over your manifests.
 
 ## Travis CI
 
-[Travis CI](http://travis-ci.org) is a wonderful free continuous integration
+[Travis CI](https://travis-ci.org) is a wonderful free continuous integration
 service that integrates with [GitHub](https://github.com), running whatever
 tests you want against your code every time you push.
 
@@ -129,7 +129,7 @@ task :default => [:spec, :lint]
 
 If you haven't already done so, commit and push all this up to GitHub.
 
-Point your browser [Travis CI](http://travis-ci.org) and login with your GitHub
+Point your browser [Travis CI](https://travis-ci.org) and login with your GitHub
 account.  In your profile page, turn on tests for your module's repository.
 
 ![Turn on tests](https://img.skitch.com/20120302-e2y2xk2cxb6mwnuhhynrjfp7m8.jpg)

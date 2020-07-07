@@ -1,28 +1,12 @@
 ---
-layout: blog
+layout: base
 title: Tim Sharpe
 ---
-{% for post in site.posts %}
-            <div class="post">
-                <div class="grid_9 push_1">
-                    <p class="title"><a href="{{ post.url }}">{{ post.title }}</a></p>
-                </div>
-                <div class="postdate grid_1">
-                    <p>
-                        {{ post.date | date: "%d" }}
-                        <br />
-                        {{ post.date | date: "%b %Y" }}
-                    </p>
-                </div>
-                <div class="clear"></div>
-                <div class="grid_10 push_1">
-                    {{ post.content }}
-                    {% if post.link %}
-                        <img src="http://www.{{ post.host }}/favicon.ico" />
-                        {{ post.host | upcase }}
-                    {% endif %}
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="grid_8 push_2"><hr /></div>
-{% endfor %}
+<div class="markdown space-y-3">
+    {% for post in site.posts %}
+    <div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <span class="text-2xl text-gray-600">{{ post.date | date: "%d %b %Y" }}</span>
+    </div>
+    {% endfor %}
+</div>

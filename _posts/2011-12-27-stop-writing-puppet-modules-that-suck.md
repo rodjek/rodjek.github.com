@@ -6,7 +6,7 @@ categories:
 ---
 
 Whenever I need to setup a new service on one of my hosts, the first thing I do
-is head to [the forge](http://forge.puppetlabs.com) and
+is head to [the forge](https://forge.puppet.com) and
 [GitHub](https://github.com) to try and find a decent Puppet module that
 already exists for it.
 

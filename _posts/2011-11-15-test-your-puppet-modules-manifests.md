@@ -9,7 +9,7 @@ published: false
 ---
 
 Continuing on from [last
-time](http://bombasticmonkey.com/2011/11/04/test-your-puppet-modules-functions),
+time](https://bombasticmonkey.com/2011/11/04/test-your-puppet-modules-functions),
 you should now have a [rspec-puppet](https://github.com/rodjek/rspec-puppet/)
 testing environment setup in your Puppet repository and be well on your way to
 having unit tests for all your custom Puppet functions.

@@ -6,13 +6,13 @@ published: false
 
 Augeas is an oft-overlooked tool when it comes to creating custom Puppet types.
 Say you want to create a type to manage
-[ssmtp's configuration file](http://linux.die.net/man/5/ssmtp.conf).  If you
+[ssmtp's configuration file](https://linux.die.net/man/5/ssmtp.conf).  If you
 posted to puppet-dev asking for help, you'd probably get 15 responses for how
 to do it using parsedfile, but no mention of Augeas.  Let's fix that.
 
 ## What is Augeas?
 
-[Augeas](http://augeas.net/) is a configuration editing tool that takes native
+[Augeas](https://augeas.net/) is a configuration editing tool that takes native
 configuration files, turns them into a tree which can be manipulated as desired
 before saving the tree back into the native file format.
 
@@ -59,7 +59,7 @@ Most linux distibutions also have packages built for augeas as well.
 
 On to our example.  We're going to write a simple type to manage the contents
 of ssmtp.conf as described by its
-[man page](http://linux.die.net/man/5/ssmtp.conf).  It's a simple `key=value`
+[man page](https://linux.die.net/man/5/ssmtp.conf).  It's a simple `key=value`
 format, like this
 
 {% highlight ini %}

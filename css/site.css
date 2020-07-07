@@ -1,234 +1,153 @@
-body {
-    font-family: cronos-pro, verdana, geneva, sans-serif;
-    font-size: 20px;
-    line-height: 1.3;
-    color: #757373;
-    background-color: #FEFDFD;
+---
+---
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+div.markdown ul {
+    @apply list-disc list-inside;
 }
 
-code {
-    font-size: 14px;
-    font-family: anonymous-pro, courier;
+div.markdown h1 {
+    @apply text-3xl font-semibold;
 }
 
-div.highlight {
-    padding: 10px;
+div.markdown h2 {
+    @apply text-2xl font-semibold;
 }
 
-div.highlight pre {
-    margin-bottom: 0px;
+div.markdown h3 {
+    @apply text-xl font-semibold;
 }
 
-sup {
-    font-size: 12px;
-    vertical-align: super;
+div.markdown a {
+    @apply text-indigo-600;
 }
 
-table.highlighttable {
-    width: 100%;
-    background-color: #002b36;
-    font-size: 12px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-family: anonymous-pro, courier;
+div.markdown a:hover {
+    @apply underline;
 }
 
-td.linenos {
-    width: 1%;
+div.markdown ul,
+div.markdown ol {
+    @apply ml-8;
 }
 
-div.linenodiv pre {
-    line-height: 124%;
-    margin-bottom: 0px;
-    padding: 10px;
-    background-color: #073642;
-    text-align: right;
-    color: #586e75;
-    clear: both;
-    overflow: hidden;
+/* Syntax highlighting */
+
+figure.highlight,
+pre.highlight {
+    @apply py-4 px-6 my-6 mx-0 overflow-auto leading-normal relative;
 }
 
-div.linenodiv pre code {
-    text-align: right;
-    color: #586e75;
+.highlighter-rouge {
+    @apply font-light relative;
 }
 
-/*
- *  HEADING
- */
-
-div.header {
-    font-family: p22-fllw-eaglefeather, verdana, geneva, sans-serif;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+p code.highlighter-rouge,
+p kbd {
+    @apply text-purple-600 text-base break-words;
 }
 
-div.header p.heading {
-    margin-bottom: 0px;
-    font-size: 40px;
+kbd {
+    @apply rounded-md border border-solid border-gray-800;
 }
 
-div.header p.subheading {
-    font-variant: small-caps;
-    margin-bottom: 0px;
+.rouge-table .code pre {
+    @apply overflow-hidden;
 }
 
-div.header p.subheading a:link {
-    text-decoration: none;
-    color: #555;
+table.rouge-table,
+table.rouge-table tr,
+table.rouge-table td,
+table.rouge-table pre {
+    @apply border-0 p-0 m-0;
 }
 
-div.header p.subheading a:visited {
-    text-decoration: none;
-    color: #555;
+table.rouge-table td.gutter {
+    @apply pr-2 border-r border-solid border-gray-500;
 }
 
-div.header p.subheading a:active {
-    font-weight: bold;
-    text-decoration: none;
-    color: #555;
+table.rouge-table td.code {
+    @apply pl-2;
 }
 
-div.header p.subheading a:hover {
-    text-decoration: underline;
-    color: #555;
+figure pre {
+    @apply mb-0;
 }
 
-
-/*
- *  POST
- */
-
-div.post {
-    text-align: justify;
+.lineno {
+    @apply text-right;
 }
 
-div.post h1 {
-    font-variant: small-caps;
-    color: #2A2A2A;
-    font-size: 30px;
+.highlight,
+.highlight pre,
+.highlight table {
+    @apply rounded bg-gray-700 text-gray-200 text-base;
 }
 
-div.post h2 {
-    font-variant: small-caps;
-    color: #2A2A2A;
-    font-size: 25px;
-}
+.highlight .c,
+.highlight .cm,
+.highlight .cp,
+.highlight .c1,
+.highlight .cs { @apply text-gray-400; } /* Comment */
+.highlight .err { @apply text-red-400; } /* Error */
+.highlight .k { @apply text-purple-300; } /* Keyword */
+.highlight .l { @apply text-orange-400; } /* Literal */
+.highlight .n,
+.highlight .h { @apply text-white; } /* Name */
+.highlight .o { @apply text-teal-300; } /* Operator */
+.highlight .p { @apply text-white; } /* Punctuation */
+.highlight .gd { @apply text-red-400; } /* Generic.Deleted */
+.highlight .ge { @apply italic; } /* Generic.Emph */
+.highlight .gh { @apply text-white font-bold; } /* Generic.Heading */
+.highlight .gi { @apply text-yellow-400; } /* Generic.Inserted */
+.highlight .gp { @apply text-gray-400 font-bold; } /* Generic.Prompt */
+.highlight .gs { @apply font-bold; } /* Generic.Strong */
+.highlight .gu { @apply text-teal-300 font-bold; } /* Generic.Subheading */
+.highlight .kc { @apply text-purple-300; } /* Keyword.Constant */
+.highlight .kd { @apply text-purple-300; } /* Keyword.Declaration */
+.highlight .kn { @apply text-teal-300; } /* Keyword.Namespace */
+.highlight .kp { @apply text-purple-300; } /* Keyword.Pseudo */
+.highlight .kr { @apply text-purple-300; } /* Keyword.Reserved */
+.highlight .kt { @apply text-orange-200; } /* Keyword.Type */
+.highlight .ld { @apply text-yellow-400; } /* Literal.Date */
+.highlight .m { @apply text-orange-400; } /* Literal.Number */
+.highlight .s { @apply text-yellow-400; } /* Literal.String */
+.highlight .na { @apply text-blue-300; } /* Name.Attribute */
+.highlight .nb { @apply text-white; } /* Name.Builtin */
+.highlight .nc { @apply text-orange-200; } /* Name.Class */
+.highlight .no { @apply text-red-400; } /* Name.Constant */
+.highlight .nd { @apply text-teal-300; } /* Name.Decorator */
+.highlight .ni { @apply text-white; } /* Name.Entity */
+.highlight .ne { @apply text-red-400; } /* Name.Exception */
+.highlight .nf { @apply text-blue-300; } /* Name.Function */
+.highlight .nl { @apply text-white; } /* Name.Label */
+.highlight .nn { @apply text-orange-200; } /* Name.Namespace */
+.highlight .nx { @apply text-blue-300; } /* Name.Other */
+.highlight .py { @apply text-white; } /* Name.Property */
+.highlight .nt { @apply text-teal-300; } /* Name.Tag */
+.highlight .nv { @apply text-red-400; } /* Name.Variable */
+.highlight .ow { @apply text-teal-300; } /* Operator.Word */
+.highlight .w { @apply text-white; } /* Text.Whitespace */
+.highlight .mf { @apply text-orange-400; } /* Literal.Number.Float */
+.highlight .mh { @apply text-orange-400; } /* Literal.Number.Hex */
+.highlight .mi { @apply text-orange-400; } /* Literal.Number.Integer */
+.highlight .mo { @apply text-orange-400; } /* Literal.Number.Oct */
+.highlight .sb { @apply text-yellow-400; } /* Literal.String.Backtick */
+.highlight .sc { @apply text-white; } /* Literal.String.Char */
+.highlight .sd { @apply text-gray-400; } /* Literal.String.Doc */
+.highlight .s2 { @apply text-yellow-400; } /* Literal.String.Double */
+.highlight .se { @apply text-orange-400; } /* Literal.String.Escape */
+.highlight .sh { @apply text-yellow-400; } /* Literal.String.Heredoc */
+.highlight .si { @apply text-orange-400; } /* Literal.String.Interpol */
+.highlight .sx { @apply text-yellow-400; } /* Literal.String.Other */
+.highlight .sr { @apply text-yellow-400; } /* Literal.String.Regex */
+.highlight .s1 { @apply text-yellow-400; } /* Literal.String.Single */
+.highlight .ss { @apply text-yellow-400; } /* Literal.String.Symbol */
+.highlight .bp { @apply text-white; } /* Name.Builtin.Pseudo */
+.highlight .vc { @apply text-red-400; } /* Name.Variable.Class */
+.highlight .vg { @apply text-red-400; } /* Name.Variable.Global */
+.highlight .vi { @apply text-red-400; } /* Name.Variable.Instance */
+.highlight .il { @apply text-orange-400; } /* Literal.Number.Integer.Long */
 
-div.post h3 {
-    font-variant: small-caps;
-    color: #2A2A2A;
-    font-size: 20px;
-}
-
-div.post code {
-    color: #890103;
-}
-
-div.post tt {
-    color: #890103;
-}
-
-div.post a {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.post a:link {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.post a:visited {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.post a:hover {
-    color: #890103;
-    text-decoration: underline;
-}
-
-div.post a:active {
-    color: #890103;
-    text-decoration: none;
-}
-
-/*
- *  POST TITLE
- */
-
-div.post p.title {
-    color: #2A2A2A;
-    font-variant: small-caps;
-    font-size: 35px;
-    text-align: left;
-}
-
-div.post p.title a:link {
-    color: #2A2A2A;
-    text-decoration: none;
-}
-
-div.post p.title a:visited {
-    color: #2A2A2A;
-    text-decoration: none;
-}
-
-div.post p.title a:hover {
-    color: #2A2A2A;
-    text-decoration: underline;
-}
-
-div.post p.title a:active {
-    color: #2A2A2A;
-    text-decoration: none;
-}
-
-/*
- *  POST DATE
- */
-
-div.postdate {
-    font-size: 12px;
-    text-align: center;
-}
-
-div.twitter {
-    text-align: center;
-}
-/*
- *  FOOTER
- */
-
-div.footer {
-    color: #757373;
-    font-size: 12px;
-    text-align: center;
-}
-
-div.footer a {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.footer a:link {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.footer a:visited {
-    color: #890103;
-    text-decoration: none;
-}
-
-div.footer a:hover {
-    color: #890103;
-    text-decoration: underline;
-}
-
-div.footer a:active {
-    color: #890103;
-    text-decoration: none;
-}
+@tailwind utilities;

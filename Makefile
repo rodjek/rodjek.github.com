@@ -1,11 +1,6 @@
-all:
-	rm -rf /tmp/sitebuild
-	bundle exec jekyll build --destination /tmp/sitebuild
-	rm -rf _site
-	git checkout master
-	rm -rf *
-	cp -rf /tmp/sitebuild/* .
-	git add .
-	git commit -a -m "update site"
-	git checkout source
-	git push --all
+build:
+	yarn install
+	bundle install
+	bundle exec jekyll build
+
+.PHONY: build
